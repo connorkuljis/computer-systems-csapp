@@ -2,6 +2,7 @@
 // Created by Connor Kuljis on 13/12/2022.
 //
 
+#include "foo.h"
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,6 +33,7 @@ int main() {
 
     printf("Thread 1 returns: %d\n", iret1);
     printf("Thread 2 returns: %d\n", iret2);
+    sayHello();
     exit(0);
 }
 
