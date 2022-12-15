@@ -6,5 +6,7 @@
 #define CSAPP_FOO_H
 
 int sayHello(void);
+int findSecondLargest(int *arr, int n);
+void printArray(int *arr, int n);
 
 #endif//CSAPP_FOO_H

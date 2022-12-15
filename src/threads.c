@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define n 5
+
 void *print_message_function(void *ptr);
 
 int main() {
@@ -34,6 +36,16 @@ int main() {
     printf("Thread 1 returns: %d\n", iret1);
     printf("Thread 2 returns: %d\n", iret2);
     sayHello();
+
+    /* other stuff*/
+    int arr[n] = {3, 1, 4, 5, 2};
+    // int arr[n] = {};
+
+    printArray(arr, n);
+    int second = findSecondLargest(arr, n);
+    printArray(arr, n);
+    printf("second largest: %d", second);
+
     exit(0);
 }
 
