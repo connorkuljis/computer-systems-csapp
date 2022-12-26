@@ -6,7 +6,9 @@
 
 int sayHello(void) {
     printf("hello from foo!\n");
+    return 0;
 }
+
 int findSecondLargest(int *arr, int n) {
     if (n < 2) {
         return 0;
